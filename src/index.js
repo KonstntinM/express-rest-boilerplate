@@ -4,6 +4,7 @@ var app = express()
 //  Imports third-party modules.
 
 const dotenv = require('dotenv').config()
+const helmet = require('helmet')
 
 //  Import the custom modules.
 
@@ -17,6 +18,7 @@ mongooseLoader();
 //  Registering the Middelweare.
 
 app.use(passportLoader.initialize())
+app.use(helmet())
 
 //  Importing the routes
 const userRoutes = require('./routes/user')
