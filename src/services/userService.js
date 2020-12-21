@@ -1,7 +1,9 @@
-const User = reuqire('../models/UserModel')
+const userRepository = require("../repositorys/userRepository")
 
-module.exports = class userService {
-    register(user) {
+module.exports = {
+    register
+}
 
-    }
+async function register () {
+
 }
