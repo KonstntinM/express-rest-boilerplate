@@ -1,0 +1,31 @@
+{
+  "name": "onlearn-server",
+  "version": "1.0.0",
+  "description": "Backend REST API of the OnLearn plattform.",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "nodemon ./src/index.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://onlearn-admin@bitbucket.org/onlearn/onlearn-server.git"
+  },
+  "keywords": [
+    "onlearn",
+    "server",
+    "api",
+    "rest"
+  ],
+  "author": "Konstantin Marx",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/onlearn/onlearn-server#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.7",
+    "nodemon": "^2.0.6",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  }
+}
