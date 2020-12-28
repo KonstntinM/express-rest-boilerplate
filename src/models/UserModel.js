@@ -7,7 +7,7 @@ const userSchema = new mongoose.Schema ({
     },
     lastname: String,
     email: { 
-        type: String, // will be improved! 
+        type: String,
         unique: true, required: true 
     },
     password: { 
@@ -17,6 +17,20 @@ const userSchema = new mongoose.Schema ({
     roles: { 
         type: Array, 
         required: true 
+    },
+    verification: {
+        email: {
+            isVerified: {
+                type: Boolean,
+                default: false
+            },
+            token: String,
+            verificationMailSent: {
+                type: Boolean,
+                default: false
+            },
+            verifiedAt: Date
+        }
     },
     language: { 
         type: String, 

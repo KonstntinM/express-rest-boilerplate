@@ -1,6 +1,6 @@
 //  This loader bundles all smaller loaders for a clearer import.
 
-const mongooseLoader = require("./mongoose-loader")
-const passportLoader = require("./passport-loader")
+const mongooseLoader = require("./mongooseLoader");
+const passportLoader = require("./passportLoader");
 
 module.exports = { mongooseLoader, passportLoader }

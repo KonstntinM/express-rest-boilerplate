@@ -3,7 +3,7 @@ var passport = require('passport')
 
 //  Importing the required database modules
 
-const User = require("../models/UserModel")
+const User = require("../models/userModel")
 
 //  Determine the authentication strategies 
 

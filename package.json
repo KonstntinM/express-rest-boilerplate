@@ -21,10 +21,14 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/onlearn/onlearn-server#readme",
   "dependencies": {
+    "crypto": "^1.0.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "helmet": "^4.2.0",
+    "joi": "^17.3.0",
+    "mjml": "^4.7.1",
     "mongoose": "^5.11.7",
+    "nodemailer": "^6.4.17",
     "nodemon": "^2.0.6",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0"
